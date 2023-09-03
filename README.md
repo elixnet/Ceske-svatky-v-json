@@ -1,7 +1,8 @@
-# České svátky v JSON
+# České svátky v JSON formátu
+
 České svátky (jmeniny a státní svátky) podle dnů v roce ve formátu JSON.
 
-## Usage in PHP:
+## Použití:
 
 ```php
 <?php
@@ -9,17 +10,19 @@ $jsonFile  = file_get_contents( './src/svatky.json' );
 $array     = json_decode( $jsonFile, true );
 
 /**
- * $array[ MONTH ][ DAY ]
+ * echo $array[ MĚSÍC ][ DEN ]
  */
 echo $array[12][31]; // 'Silvestr'
 echo $array[7][30];  // 'Bořivoj'
 echo $array[1][1];   // 'Nový rok'
 ```
 
-## Support
-**České svátky** is open source and free. Donate for coffee or just like that:
+## Podpora
 
-BTC: `bc1q03v5la7uvcwxr7z4qn03ex6n5edju6zv4n6ppt`
+**České svátky** jsou **open source** a **zdarma**. Podpořte práci autora :
 
-## License
-**České svátky** is open source software licensed under the [MIT license](https://tldrlegal.com/license/mit-license).
+**BTC**: `bc1q03v5la7uvcwxr7z4qn03ex6n5edju6zv4n6ppt`
+
+## Licence
+
+**České svátky** je open source software licencován pod [MIT license](https://tldrlegal.com/license/mit-license).
